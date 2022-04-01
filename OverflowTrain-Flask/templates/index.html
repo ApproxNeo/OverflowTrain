@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SIGTrain</title>
+
+		<link rel="shortcut icon" href={{ url_for('static', filename='assets/favicon.ico') }} />
+		
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+		
+		<!-- SweetAlert2 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+		
+		<!-- SIGTrain -->
+		<script src={{ url_for('static', filename='js/SIGTrain.js') }} async></script>
+		<link rel="stylesheet" href={{ url_for('static', filename='css/SIGTrain.css') }} />
+	</head>
+	
+	<body>
+		<!-- <div id="controller">
+			<button id="zoomin">+</button>
+			<button id="zoomout">-</button>
+		</div> -->
+		
+		<div id="question">
+			<div class="question-text">
+				<h1 class="animated pulse infinite">Where would you like to go?</h1>
+			</div>
+		</div>
+		
+		<div id="map">
+			<div id="stations">
+				<span class="station Woodlands"></span>
+				<span class="station Bishan"></span>
+				<span class="station Orchard"></span>
+				<span class="station City_Hall"></span>
+				<span class="station Marina_Bay"></span>
+				
+				<span class="station HarbourFront"></span>
+				<span class="station Haw_Par_Villa"></span>
+				<span class="station Buona_Vista"></span>
+				<span class="station Botanic_Gardens"></span>
+				<span class="station Serangoon"></span>
+				<span class="station Paya_Lebar"></span>
+				<span class="station Esplanade"></span>
+				
+				<span class="station Jurong_East"></span>
+				<span class="station Clementi"></span>
+				<span class="station Changi"></span>
+			</div>
+		
+			<img class="map-img" src={{ url_for('static', filename='assets/map.png') }} />
+		</div>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  animation-name: backgroundAnimation;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: rgb(60, 60, 60);
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+#controller {
+  position: fixed;
+  right: 0.5em;
+  bottom: 1em;
+}
+
+#controller button {
+  border: 2px solid gold;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#question {
+  color: white;
+  font-family: "Kiwi Maru", serif;
+  background-color: rgba(20, 20, 20, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.question-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#map {
+  position: absolute !important;
+  cursor: grab;
+}
+
+#map:active {
+  cursor: grabbing;
+}
+
+.map-img {
+  position: absolute !important;
+  z-index: -10;
+}
+
+.station {
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.4s;
+  z-index: -9;
+}
+
+.station:hover {
+  cursor: pointer;
+  background-color: rgba(240, 240, 240, 1);
+  box-shadow: 0 0 15px rgba(255, 255, 10, 1);
+}
+
+.Woodlands {
+  left: 470px;
+  top: 130px;
+}
+
+.Bishan {
+  left: 880px;
+  top: 300px;
+}
+
+.Orchard {
+  left: 790px;
+  top: 610px;
+}
+
+.City_Hall {
+  left: 940px;
+  top: 880px;
+}
+
+.Marina_Bay {
+  left: 1015px;
+  top: 1055px;
+}
+
+.HarbourFront {
+  left: 555px;
+  top: 1065px;
+}
+
+.Haw_Par_Villa {
+  left: 555px;
+  top: 1065px;
+}
+
+.Buona_Vista {
+  left: 510px;
+  top: 730px;
+}
+
+.Botanic_Gardens {
+  left: 665px;
+  top: 450px;
+}
+
+.Serangoon {
+  left: 1110px;
+  top: 430px;
+}
+
+.Paya_Lebar {
+  left: 1225px;
+  top: 690px;
+}
+
+.Esplanade {
+  left: 1055px;
+  top: 915px;
+}
+
+.Jurong_East {
+  left: 375px;
+  top: 630px;
+}
+
+.Clementi {
+  left: 430px;
+  top: 650px;
+}
+
+.Changi {
+  left: 1725px;
+  top: 815px;
+}
